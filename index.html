@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Ejercicio final</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <header>
+    <!--Navegación-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="carrusel">
+      <!--Carrusel-->
+    </div>
+    <h1>Presupuesto</h1>
+
+    <div>
+      <div>
+        <form>
+          <label>Nombre:</label>
+          <input type="text" name="nombre" id="nombre">
+          <div>
+            Es necesario escribir el nombre
+          </div>
+
+          <label>Apellido:</label>
+          <input type="text" id="apellido">
+
+          <label>Correo:</label>
+          <input type="email" id="correo">
+
+          <label>Teléfono:</label>
+          <input type="tel" id="telefono">
+
+          <label>Tipo de trabajo</label>
+          <select id="base">
+            <option>Elige una opción</option>
+            <option>HTML básico 1000€</option>
+            <option>Diseño avanzado 1400€</option>
+            <option>Panel de administración 2500€</option>
+          </select>
+
+          <label>Plazo en meses:</label>
+          <input type="number" min="0" id="plazo">
+
+          <input type="checkbox" id="galeria">
+          <label>Galería</label>
+
+          <input type="checkbox" id="formulario">
+          <label>Formulario de presupuesto</label>
+
+
+          <input type="checkbox" id="ecom">
+          <label>Tienda</label>
+
+          <input type="checkbox" id="redes">
+          <label>Redes sociales</label>
+
+
+          <input type="checkbox" id="localiz">
+          <label>Mapa localización interactivo</label>
+
+          <input type="checkbox" id="soporteweb">
+          <label>Soporte Web</label>
+
+          <label>Presupuesto estimado:</label>
+          <input type="text" id="total">
+
+          <input type="checkbox" id="privacidad">
+          <label>He leido la política de privacidad</label>
+
+          <button type="submit">Enviar datos</button>
+        </form>
+      </div>
+
+      <div>
+        <!--Noticias-->
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
