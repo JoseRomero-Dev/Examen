@@ -84,30 +84,30 @@
         </div>
       </div>
     </div>
-    <h1 class="text-start ms-5">Presupuesto</h1>
 
     <div class="container">
       <div class="row align-items-start">
         <div class="col-12 col-lg-6 d-flex gap-2 justify-content-center">
-          <form class="text-start">
+          <form>
+            <h1>Presupuesto</h1>
             <label class="form-label">Nombre:</label>
-            <input class="form-control" type="text" name="nombre" id="nombre">
-            <div>
+            <input class="form-control" type="text" name="nombre" id="nombre" required>
+            <div class="mt-2">
               Es necesario escribir el nombre
             </div>
 
-            <label class="form-label">Apellido:</label>
+            <label class="form-label mt-2">Apellido:</label>
             <input class="form-control" type="text" id="apellido">
 
-            <label class="form-label">Correo:</label>
+            <label class="form-label mt-2">Correo:</label>
             <input class="form-control" type="email" id="correo">
 
 
-            <label class="form-label">Teléfono:</label>
+            <label class="form-label mt-2">Teléfono:</label>
             <input class="form-control" type="tel" id="telefono">
 
 
-            <label class="form-label">Tipo de trabajo</label>
+            <label class="form-labe mt-2">Tipo de trabajo</label>
             <select class="form-select" id="base">
               <option>Elige una opción</option>
               <option>HTML básico 1000€</option>
@@ -116,49 +116,52 @@
             </select>
 
 
-            <label class="form-label">Plazo en meses:</label>
+            <label class="form-label mt-2">Plazo en meses:</label>
             <input class="form-control" type="number" min="0" id="plazo">
+            <div class="row">
+              <div class="col-6 mt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="galeria">
+                  <label class="form-check-label">Galería</label>
+                </div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="galeria">
-              <label class="form-check-label">Galería</label>
-            </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="formulario">
+                  <label class="form-check-label">Formulario de presupuesto</label>
+                </div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="formulario">
-              <label class="form-check-label">Formulario de presupuesto</label>
-            </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="ecom">
+                  <label class="form-check-label">Tienda</label>
+                </div>
+              </div>
+              <div class="col-6 mt-2">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="redes">
+                  <label class="form-check-label">Redes sociales</label>
+                </div>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="ecom">
-              <label class="form-check-label">Tienda</label>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="localiz">
+                  <label class="form-check-label">Mapa localización interactivo</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="soporteweb">
+                  <label class="form-check-label">Soporte Web</label>
+                </div>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="redes">
-              <label class="form-check-label">Redes sociales</label>
-            </div>
+            <label class="form-label">Presupuesto estimado:</label>
+            <input class="form-control" type="text" id="total" disabled>
 
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="localiz">
-              <label class="form-check-label">Mapa localización interactivo</label>
-            </div>
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="soporteweb">
-              <label class="form-check-label">Soporte Web</label>
-            </div>
-
-            <div class="form-check">
-              <label class="form-label">Presupuesto estimado:</label>
-              <input type="text" id="total">
-            </div>
-            <div class="form-check">
+            <div class="form-check mt-2">
               <input class="form-check-input" type="checkbox" id="privacidad">
               <label class="form-check-label">He leido la política de privacidad</label>
             </div>
-            <button class="btn btn-primary" type="submit">Enviar datos</button>
+            <button class="btn btn-primary mt-2" type="submit">Enviar datos</button>
           </form>
         </div>
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 mt-2">
           <!--Noticias-->
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
@@ -221,9 +224,9 @@
         <div class="col-6 justify-content-center p-2">
           <h5>Links</h5>
           <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a class="text-white" href="#">Home</a></li>
+            <li><a class="text-white" href="#">Portafolio</a></li>
+            <li><a class="text-white" href="#">Contacto</a></li>
           </ul>
         </div>
       </div>
